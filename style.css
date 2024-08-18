@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "SpaceMono";
+  src: url("./assets/fonts/SpaceMono-Regular.ttf");
+}
+:root {
+  --Strongcyan: hsl(172, 67%, 45%);
+  --Verydarkcyan: hsl(183, 100%, 15%);
+  --Darkgrayishcyan: hsl(186, 14%, 43%);
+  --Grayishcyan: hsl(184, 14%, 56%);
+  --Lightgrayishcyan: hsl(185, 41%, 84%);
+  --Verylightgrayishcyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SpaceMono";
+}
+body {
+  background-color: var(--Lightgrayishcyan);
+  width: clamp(40rem, calc(100% - 40px), 50rem);
+  min-height: 100vh;
+  margin: 5rem auto;
+}
+header,
+main,
+main form,
+main section {
+  width: 100%;
+}
+header {
+  text-align: center;
+  margin: 0 0 2rem 0;
+}
+main {
+  padding: 1.35rem;
+  gap: 2rem;
+  background-color: var(--White);
+  border-radius: 1rem;
+}
+main section {
+  background-color: var(--Verydarkcyan);
+  padding: 1rem;
+  border-radius: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+main section .content {
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section .content div {
+  justify-content: space-between;
+  color: var(--White);
+  align-items: center;
+}
+main section .content div h2 {
+  color: var(--Strongcyan);
+  font-size: 2.35rem;
+}
+main section .content div p {
+  line-height: 1.15em;
+}
+main section .content div p span {
+  font-size: 0.75rem;
+}
+main section button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--Darkgrayishcyan);
+  color: var(--Verydarkcyan);
+  border: none;
+  outline: none;
+  border-radius: 0.35rem;
+  cursor: pointer;
+}
+form {
+  flex-direction: column;
+  gap: 2rem;
+}
+form label #bill,
+form label #people {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.45rem;
+  background-color: var(--Verylightgrayishcyan);
+  border: none;
+  font-size: 24px;
+  text-align: end;
+  color: var(--Darkgrayishcyan);
+}
+form label #bill::placeholder,
+form label #people::placeholder {
+  color: var(--Darkgrayishcyan);
+}
+form label div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+form label div label:last-child span {
+  background-color: var(--Verylightgrayishcyan);
+  color: var(--Verydarkcyan);
+  border: 2px solid var(--Grayishcyan);
+}
+form label div label span {
+  display: block;
+  padding: 0.45rem;
+  transition: 0.45s;
+  border-radius: 0.45rem;
+  background-color: var(--Verydarkcyan);
+  color: var(--White);
+  text-align: center;
+  border: 2px solid transparent;
+}
+form label div label input {
+  position: absolute;
+  visibility: hidden;
+}
+form label div label span:hover {
+  background-color: var(--Verylightgrayishcyan);
+  color: var(--Verydarkcyan);
+  border: 2px solid var(--Grayishcyan);
+}
+input[type="radio"]:checked + span {
+  background-color: var(--Strongcyan);
+  color: var(--Verydarkcyan);
+  border: 2px solid transparent;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 2rem 0 0 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.d-flex {
+  display: flex;
+  align-content: center;
+}
+input {
+  outline: none;
+}
+
+h4 {
+  margin: 0 0 0.75rem 0;
+  color: var(--Darkgrayishcyan);
+}
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
