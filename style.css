@@ -22,8 +22,10 @@
 body {
   background-color: var(--Lightgrayishcyan);
   width: clamp(40rem, calc(100% - 40px), 50rem);
+  flex-direction: column;
+  justify-content: center;
   min-height: 100vh;
-  margin: 5rem auto;
+  margin: auto;
 }
 header,
 main,
@@ -33,7 +35,7 @@ main section {
 }
 header {
   text-align: center;
-  margin: 0 0 2rem 0;
+  margin: 2rem 0;
 }
 main {
   padding: 1.35rem;
@@ -135,7 +137,7 @@ input[type="radio"]:checked + span {
 .attribution {
   font-size: 11px;
   text-align: center;
-  margin: 2rem 0 0 0;
+  margin: 2rem 0;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -154,4 +156,36 @@ h4 {
 }
 input::-webkit-inner-spin-button {
   appearance: none;
+}
+.mobile {
+  display: none;
+}
+@media (max-width: 40rem) {
+  .mobile {
+    display: block;
+    margin: 1rem 0 0 0;
+  }
+  .desktop {
+    display: none;
+  }
+  body {
+    width: 100%;
+  }
+  header {
+    margin: 3rem 0;
+  }
+  main {
+    flex-direction: column;
+    padding: 7.5%;
+  }
+  main section {
+    padding: 5%;
+  }
+  form label div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  form label div label span {
+    padding: 0.7rem;
+  }
 }
