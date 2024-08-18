@@ -1,44 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <header>
+    <img src="./assets/images/logo.svg" alt="logo">
+  </header>
+  <main class="d-flex">
+    <form action="#" class="d-flex">
+      <label for="bill">
+        <h4>Bill</h4>
+        <input type="number" name="bill" id="bill" placeholder="0">
+      </label>
 
-  Bill
+      <label>
+        <h4>Select Tip %</h4>
+        <div>
+          <label for="five">
+            <input type="radio" name="percentage" id="five">
+            <span>5%</span>
+          </label>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+          <label for="ten">
+            <input type="radio" name="percentage" id="ten">
+            <span>10%</span>
+          </label>
 
-  Number of People
+          <label for="fifteen">
+            <input type="radio" name="percentage" id="fifteen">
+            <span>15%</span>
+          </label>
 
-  Tip Amount
-  / person
+          <label for="twentyFive">
+            <input type="radio" name="percentage" id="twentyFive">
+            <span>25%</span>
+          </label>
 
-  Total
-  / person
+          <label for="fifty">
+            <input type="radio" name="percentage" id="fifty">
+            <span>50%</span>
+          </label>
 
-  Reset
-  
+          <label for="custom">
+            <input type="radio" name="percentage" id="custom">
+            <span>Custom</span>
+          </label>
+        </div>
+      </label>
+
+      <label for="people">
+        <h4>Number of People</h4>
+        <input type="number" name="people" id="people" placeholder="0">
+      </label>
+    </form>
+
+    <section class="d-flex">
+      <div class="d-flex content">
+        <div class="d-flex">
+          <p>Tip Amount <br><span>/ person</span></p>
+          <h2>$0.00</h2>
+        </div>
+        <div class="d-flex">
+          <p>Total <br><span>/ person</span></p>
+          <h2>$0.00</h2>
+        </div>
+      </div>
+
+      <button>Reset</button>
+    </section>
+  </main>
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Adewale Stephen</a>.
   </div>
 </body>
+
 </html>
