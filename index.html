@@ -18,47 +18,54 @@
     <form action="#" class="d-flex">
       <label for="bill">
         <h4>Bill</h4>
-        <input type="number" name="bill" id="bill" placeholder="0">
+        <span class="icon">
+          <img src="./assets/images/icon-dollar.svg" alt="dollar">
+          <input data-bill="bill" type="number" name="bill" id="bill" placeholder="0">
+        </span>
       </label>
 
       <label>
         <h4>Select Tip %</h4>
         <div>
           <label for="five">
-            <input type="radio" name="percentage" id="five">
+            <input data-percentage="percentage" type="radio" name="percentage" id="five" value="5">
             <span>5%</span>
           </label>
 
           <label for="ten">
-            <input type="radio" name="percentage" id="ten">
+            <input data-percentage="percentage" type="radio" name="percentage" id="ten" value="10">
             <span>10%</span>
           </label>
 
           <label for="fifteen">
-            <input type="radio" name="percentage" id="fifteen">
+            <input data-percentage="percentage" type="radio" name="percentage" id="fifteen" value="15">
             <span>15%</span>
           </label>
 
           <label for="twentyFive">
-            <input type="radio" name="percentage" id="twentyFive">
+            <input data-percentage="percentage" type="radio" name="percentage" id="twentyFive" value="25">
             <span>25%</span>
           </label>
 
           <label for="fifty">
-            <input type="radio" name="percentage" id="fifty">
+            <input data-percentage="percentage" type="radio" name="percentage" id="fifty" value="50">
             <span>50%</span>
           </label>
 
-          <label for="custom">
+          <label for="custom" class="custom">
             <input type="radio" name="percentage" id="custom">
             <span>Custom</span>
+            <input type="number" name="percentage" placeholder="Custom">
           </label>
         </div>
       </label>
 
       <label for="people">
         <h4>Number of People</h4>
-        <input type="number" name="people" id="people" placeholder="0">
+        <span class="icon">
+          <img src="./assets/images/icon-person.svg" alt="person">
+          <input data-people="people" type="number" name="people" id="people" placeholder="0">
+        </span>
       </label>
     </form>
 
@@ -87,6 +94,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Adewale Stephen</a>.
   </div>
+  <script src="main.js"></script>
 </body>
 
 </html>
