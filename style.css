@@ -99,7 +99,7 @@ form label #people {
   font-family: "SpaceMonoBold";
   font-size: 1.5rem;
   text-align: end;
-  color: var(--Darkgrayishcyan);
+  color: var(--Verydarkcyan);
 }
 form label #bill::placeholder,
 form label #people::placeholder,
