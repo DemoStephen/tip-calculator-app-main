@@ -55,7 +55,7 @@
           <label for="custom" class="custom">
             <input type="radio" name="percentage" id="custom">
             <span>Custom</span>
-            <input type="number" name="percentage" placeholder="Custom">
+            <input data-customTip="customTip" type="number" name="percentage" placeholder="Custom">
           </label>
         </div>
       </label>
@@ -73,15 +73,15 @@
       <div class="d-flex content">
         <div class="d-flex">
           <p>Tip Amount <br><span>/ person</span></p>
-          <h2>$0.00</h2>
+          <h2 data-tipPerPerson="tipPerPerson">$0.00</h2>
         </div>
         <div class="d-flex">
           <p>Total <br><span>/ person</span></p>
-          <h2>$0.00</h2>
+          <h2 data-totalTip="totalTip">$0.00</h2>
         </div>
       </div>
 
-      <button>Reset</button>
+      <button data-reset="reset">Reset</button>
     </section>
 
     <div class="attribution mobile">
